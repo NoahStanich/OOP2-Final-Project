@@ -11,13 +11,7 @@ namespace OOP2_Final_Project.Components.Pages
         public int transactionId { get; set; }
         public DateTime date { get; set; }  
         public int orderId { get; set; }
-        public void CalculateTotal(int orderId)
-        {
-            
-        }
-        public void ValidateTransaction()
-        {
-
-        }
+        public int CalculateTotal(int orderId);
+        public void ValidateTransaction();
     }
 }
