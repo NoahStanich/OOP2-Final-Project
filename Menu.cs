@@ -8,7 +8,21 @@ namespace OOP2_Final_Project.Components.Pages
 {
     public class Menu
     {
-        List<string> menuItems = new List<string>();
-        Dictionary<string, int> prices = new Dictionary<string, int>();
+        public int itemId { get; set; }
+        public string name { get; set; }
+        public double price { get; set; }
+        public int inventory { get; set; }
+        
+        public bool IsAvailable(int quantity)
+        {
+            if (quantity > inventory)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
     }
 }
